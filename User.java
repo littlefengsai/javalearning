@@ -1,27 +1,29 @@
-package javase.day01;
+package javase.day02;
 
 public class User {
 	
-	////年龄
-	//int age;
-	
-	//属性私有化
-	private int age;
-	
-	//setter
-	public void setAge(int a)
+	//无参数构造方法
+	public User()
 	{
-		if(a<0 || a>150)
-		{
-			System.out.println("对不起，您输入的年龄不合法");
-			return;
-		}
-		age = a;
+		System.out.println("User`s Default Constructor Invoke!");
+		
 	}
 	
-	//getter
-	public int getAge()
+	//有参数的构造方法
+	public User(int i)
 	{
-		return age;
+		System.out.println("带有int类型参数的构造器");
 	}
+	
+	//有参数的构造方法
+	public User(String name)
+	{
+		System.out.println("带有String类型的构造器");
+	}
+	
+	//有参数的构造方法
+	public User(int i,String name){
+		System.out.println("带有int，String类型的构造器");
+	}
+	
 }
