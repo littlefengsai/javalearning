@@ -1,33 +1,18 @@
-package javase.day02;
+package javase.day03;
 
 public class Customer {
-	private int no;
-	private String name;
-	private String birth;
 	
-	public Customer(int a, String b, String c) {
-		//super();
-		no = a;
-		name = b;
-		birth = c;
+	//姓名
+	String name;
+	
+	//构造方法
+	public Customer(){
+		
+	}
+	public void shopping(){
+		System.out.println(this.name+"在购物");
 	}
 	
-	public int getNo() {
-		return no;
-	}
-	public void setNo(int no) {
-		this.no = no;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getBirth() {
-		return birth;
-	}
-	public void setBirth(String birth) {
-		this.birth = birth;
-	}
+	
+	
 }
