@@ -1,29 +1,38 @@
-package javase.day02;
+package javase.day04;
 
 public class User {
 	
-	//无参数构造方法
-	public User()
-	{
-		System.out.println("User`s Default Constructor Invoke!");
+	private int id;
+	private String name;
+	
+	public User(){
 		
 	}
-	
-	//有参数的构造方法
-	public User(int i)
-	{
-		System.out.println("带有int类型参数的构造器");
+
+	public User(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	//有参数的构造方法
-	public User(String name)
-	{
-		System.out.println("带有String类型的构造器");
-	}
 	
-	//有参数的构造方法
-	public User(int i,String name){
-		System.out.println("带有int，String类型的构造器");
-	}
 	
 }
+
+
+
