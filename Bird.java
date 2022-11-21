@@ -1,8 +1,9 @@
-package javase.day05;
+package javase.day06;
 
-public class Bird extends Animal{
+public class Bird extends Cat {
 
 	public void move(){
 		System.out.println("Äñ¶ùÔÚ·ÉÏè");
 	}
+	
 }
